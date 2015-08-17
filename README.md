@@ -1,5 +1,5 @@
-# google-homepage
+# Recreating the Google homepage. 
 
-First commit. Recreating Google's homepage. 
+First commit. HTML/CSS project recreating Google's homepage. 
 
-Via The Odin Project: http://www.theodinproject.com/web-development-101/html-css?ref=lnav
+Via <a href="The Odin Project: http://www.theodinproject.com/web-development-101/html-css?ref=lnav">The Odin Project</a>
