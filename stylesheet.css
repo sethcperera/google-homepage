@@ -1,3 +1,5 @@
+/*---------top right nav panel starts here-----------*/
+
 ul {
 	list-style-type: none;
 	margin: 20px;
@@ -10,7 +12,7 @@ li {
 	display: inline;
 	margin-right: 10px;
 	font-family: Arial;
-	font-size: 15px;
+	font-size: 13px;
 	text-decoration: none;
 }
 
@@ -23,13 +25,14 @@ li {
 	margin-left: 15px;
 	background-color: #2870EB;
 	color: white;
-	height: 25px;
-	width: 75px;
+	font-size: inherit;
+	font-weight:  bold;
+	height: 30px;
+	width: 70px;
+	border: 1px solid #2870EB;
 	border-radius: 2px;
 	text-align: center;
-
 }
-
 
 .link {
 	text-decoration: none;
@@ -42,25 +45,35 @@ li {
 	color:black;
 }
 
+
+/*had to hack this to get the app launcher icon in the correct spot. I am sure there is a better way than setting negative margins.*/
+
 li img{
 	
 	height: auto;
 	width: auto;
-	max-width:17px;
-	max-height:17px;
- 
+	max-width: 20px;
+	max-height: 20px;	
+	margin: -5px;
 }
+
+
+/*--------logo & search bar start here---------*/
 
 /*using the ">" allows me to directly select the image I want to work with here. Before I implemented this both images
 (google logo + app square) were being selected by the "img" selector causing some problems. Thank you stackoverflow.*/
 
-body > img {
+
+.search_area {
+	text-align: center;
+}
+
+div > img {
 	display: block;
 	margin: 0 auto;
 	width: 269px;
 	height: 95px;
-	padding-top: 190px;
-
+	padding-top: 130px;
 }
 
 /*really don't understand why setting the selector to form doesnt allow me to style 
@@ -69,9 +82,9 @@ the form field here*/
 input {
 	display: block;
 	width: 550px;
-	height:25px;
+	height:30px;
 	margin: 0 auto;
-	margin-top: 15px;
+	margin-top: 25px;
 	border: 1px solid #d0d0d0;
 }
 
@@ -82,3 +95,62 @@ input:hover {
 input:focus {
 	border: 1px solid #0099ff;
 }
+
+.sbutton {
+	margin-top: 11px;
+	margin-right: 8px;
+	margin-left: 8px;
+	display: inline-block;
+	border: 1px solid #d3d3d3;
+	background-color: #f0f0f0;
+	font-family: Arial;
+	font-size : 11px;
+	font-weight: bold;
+	border-radius: 2px;
+	height: 29px;
+	min-width: 54px;
+	
+}
+
+.sbutton:hover {
+	border: 1px solid #bfbfbf;
+}
+
+/*-----------footer starts here----------*/
+
+.footer{
+	list-style-type: none;
+	position: absolute;
+	display: inline;
+	background-color: #efefef;
+	width: 100%;
+	height: 50px;
+	border-top: 1px solid #dddddd;
+	margin: 0px;
+	margin-left: -10px;
+	padding: 0px;
+	bottom: 0px;
+	font-size: 12px;
+	word-spacing: 15px;
+
+}
+
+.left{
+	
+	float: left;
+
+}
+
+
+.link1 {
+	text-decoration: none;
+	color: gray;
+
+}
+
+.link1:hover {
+	text-decoration: underline;
+	color: gray;
+}
+
+
